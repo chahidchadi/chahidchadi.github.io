@@ -48,6 +48,22 @@ modern Hebrew][5].
 
 **1975**: Born, in Israel.
 
+## Full CV
+
+<embed src="/path/to/your/cv.pdf" width="100%" height="600px" type="application/pdf">
+
+<script>
+if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+    document.write('<object data="/path/to/your/cv.pdf" type="application/pdf" width="100%" height="600px">');
+    document.write('</object>');
+} else {
+    document.write('<iframe src="/path/to/your/cv.pdf" width="100%" height="600px" style="border: none;">');
+    document.write('This browser does not support PDFs. Please download the PDF to view it: ');
+    document.write('<a href="/path/to/your/cv.pdf">Download PDF</a>');
+    document.write('</iframe>');
+}
+</script>
+
 [1]: {{site.baseurl}}/topics/{{page.lang}}/fairness
 [2]: {{site.baseurl}}/topics/{{page.lang}}/auctions
 [3]: {{site.baseurl}}/topics/{{page.lang}}/repeatedgames
