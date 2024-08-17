@@ -54,7 +54,7 @@ modern Hebrew][5].
 
 <script>
 if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
-    document.write('<object data="/path/to/your/cv.pdf" type="application/pdf" width="100%" height="600px">');
+    document.write('<object data="/cv/Curriculum vitæ.pdf" type="application/pdf" width="100%" height="600px">');
     document.write('</object>');
 } else {
     document.write('<iframe src="/path/to/your/cv.pdf" width="100%" height="600px" style="border: none;">');
