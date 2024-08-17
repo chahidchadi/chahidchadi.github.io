@@ -4,22 +4,6 @@ layout: page
 title:  CV
 lang: en
 ---
-
-
-
-## Short CV
-
-
-
-
-
-
-
-
-
-
-
-
 ## Full CV
 
 <embed src="/path/to/your/cv.pdf" width="100%" height="600px" type="application/pdf">
