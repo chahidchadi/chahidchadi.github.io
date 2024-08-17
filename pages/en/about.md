@@ -5,15 +5,6 @@ title: Home
 permalink: /
 lang: en
 ---
-# Chahid Chadi - Academic Homepage
-
----
-ident: 1-about
-layout: page
-title: Home
-permalink: /
-lang: en
----
 
 # Chadi Chahid - Academic Homepage
 
