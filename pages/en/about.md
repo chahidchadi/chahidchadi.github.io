@@ -99,40 +99,4 @@ I am always eager to collaborate on projects related to:
 
 If you're interested in discussing potential research opportunities or collaborations, please feel free to [contact me](mailto:ch.chahid@edu.umi.ac.ma).
 
-## Publications and Presentations
 
-(List any publications, conference presentations, or posters here)
-
-## Awards and Honors
-
-(List any academic awards, scholarships, or honors you've received)
-
-<p style="text-align: right;">
-<img src='/images/profile_picture.jpg' alt='Chadi Chahid'/>
-</p>
-
-I served as PC member in IJCAI (2018-2021, last year as SPC), AAAI (2019-2021), AAMAS (2019-2021), EC (2021), COMSOC (2023), ECAI (2023, as SPC), IJCAI-CFD-workshop (2023) and have [reviewed for various journals](https://www.webofscience.com/wos/author/record/706840), as well as for the [NSF](https://www.nsf.org/).
-
-<p style='display:none'>
-In addition to research, I have many years of experience [programming in various languages][6].
-</p>
-
-<p style="text-align: right;">
-<img src='/images/temple_mount_20170727_012.jpg' alt='My wife and I on the Temple Mount, 2017-07-27'/>
-</p>
-
-[1]: {{site.baseurl}}/topics/{{page.lang}}/fairness
-[2]: {{site.baseurl}}/topics/{{page.lang}}/auctions
-[3]: {{site.baseurl}}/topics/{{page.lang}}/repeatedgames
-[4]: {{site.baseurl}}/topics/{{page.lang}}/negochat
-[5]: {{site.baseurl}}/topics/{{page.lang}}/hebnlp
-[6]: {{site.baseurl}}/pages/{{page.lang}}/code
-[7]: {{site.baseurl}}/topics/{{page.lang}}/tnk
-[8]: {{site.baseurl}}/pages/{{page.lang}}/wishlist
-[research]: {{site.baseurl}}/papers/ResearchProgram-ISF-712-20.pdf
-[ya]: https://sites.google.com/site/aumannbiu/
-[ah]: http://u.cs.biu.ac.il/~avinatan/
-[phd]: {{site.baseurl}}/papers/Erel-Segal-Halevi-PhD-Thesis.pdf
-[biucs]: http://cs.biu.ac.il/
-[arielcs]: https://www.ariel.ac.il/wp/cs/en/
-[ratio]: http://www.ratio.huji.ac.il/
