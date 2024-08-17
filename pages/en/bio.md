@@ -57,9 +57,9 @@ if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
     document.write('<object data="/cv/Curriculum vitæ.pdf" type="application/pdf" width="100%" height="600px">');
     document.write('</object>');
 } else {
-    document.write('<iframe src="/path/to/your/cv.pdf" width="100%" height="600px" style="border: none;">');
+    document.write('<iframe src="/cv/Curriculum vitæ.pdf" width="100%" height="600px" style="border: none;">');
     document.write('This browser does not support PDFs. Please download the PDF to view it: ');
-    document.write('<a href="/path/to/your/cv.pdf">Download PDF</a>');
+    document.write('<a href="/cv/Curriculum vitæ.pdf">Download PDF</a>');
     document.write('</iframe>');
 }
 </script>
