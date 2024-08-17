@@ -97,6 +97,17 @@ I am always eager to collaborate on projects related to:
 - Machine learning applications in mathematics
 - Educational technology
 
-If you're interested in discussing potential research opportunities or collaborations, please feel free to [contact me](mailto:ch.chahid@edu.umi.ac.ma).
+I am open to various forms of collaboration, including:
+- Research partnerships
+- Scientific visits (Séjour scientifique)
+- Joint supervision of doctoral theses (Cotutelle)
+- Co-coordination of research projects
+
+These collaborations can focus on areas such as:
+- Developing novel numerical methods for PDEs
+- Applying machine learning techniques to mathematical problems
+- Exploring interdisciplinary applications of mathematics
+
+If you're interested in discussing potential research opportunities or any form of collaboration, please feel free to [contact me](mailto:ch.chahid@edu.umi.ac.ma).
 
 
