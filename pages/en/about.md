@@ -10,7 +10,7 @@ lang: en
 
 ## About Me
 
-I am a PhD student in Applied Mathematics at [Moulay Ismail University](http://www.umi.ac.ma/en/), specializing in numerical analysis and partial differential equations (PDEs). My research focuses on innovative approaches to solving complex mathematical problems, particularly through the application of machine learning techniques to traditional mathematical challenges.
+I am a PhD student in Applied Mathematics at [Moulay Ismail University](http://www.umi.ac.ma/), specializing in numerical analysis and partial differential equations (PDEs). My research focuses on innovative approaches to solving complex mathematical problems, particularly through the application of machine learning techniques to traditional mathematical challenges.
 
 ## Research Interests
 
@@ -25,17 +25,17 @@ My primary research goal is to develop cutting-edge methods for solving PDEs usi
 - **PhD in Applied Mathematics** (2023 - Present)
   - Moulay Ismail University
   - Thesis: "Parallel (space/time) schemes for solving PDEs"
-  - Advisors: Prof. Lahmi Badr, Prof. Khallouq Samir
+  - Advisors: Prof. [Lahmi Badr](https://www.researchgate.net/profile/B-Lahmi), Prof. [Khallouq Samir](https://www.researchgate.net/profile/Samir-Khallouq)
 
 - **Master's in Numerical Analysis and Partial Differential Equations** (2021 - 2023)
   - Moulay Ismail University
-  - Thesis: "Schwarz-type domain decomposition methods"
-  - Advisor: Prof. Khallouq Samir
+  - Thesis: "[Schwarz-type domain decomposition methods](https://drive.google.com/file/d/16hBQ6657hJIgSbRm2KyCgnr-bMxMh4Kg/view?usp=sharing)"
+  - Advisor: Prof. [Khallouq Samir](https://www.researchgate.net/profile/Samir-Khallouq)
 
 - **Bachelor's in Applied Mathematics** (2017 - 2021)
   - Moulay Ismail University
-  - Final Project: "Solving differential equations using the Laplace transform"
-  - Advisor: Prof. Mohamed Zitane
+  - Final Project: "[Solving differential equations using the Laplace transform](https://drive.google.com/file/d/16hBQ6657hJIgSbRm2KyCgnr-bMxMh4Kg/view?usp=sharing)"
+  - Advisor: Prof. [Mohamed Zitane](https://www.researchgate.net/profile/Mohamed-Zitane)
 
 ## Professional Experience
 
