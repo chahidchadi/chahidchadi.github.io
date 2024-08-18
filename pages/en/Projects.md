@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Projects
-title: Projects
 description: 
 lang: en
 ---
