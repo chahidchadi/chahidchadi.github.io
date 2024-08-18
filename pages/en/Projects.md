@@ -29,7 +29,7 @@ Developed a machine learning model to detect fraudulent credit card transactions
 - Refine performance metrics for better alignment with business objectives
 - Enhance model robustness and scalability for large-scale deployment
 
- ## Full CV
+ # Full Rapport
 
 <embed src="/cv/credit_card_fraud_detection_model_rapport.pdf" width="100%" height="600px" type="application/pdf">
 
