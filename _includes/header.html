@@ -19,7 +19,7 @@
 
       <div class="trigger">
      <span class='page-links'>
-      {% assign pages=site.pages | sort: 'ident' %}
+      {% assign pages=site.pages | where:"lang", "en" | sort: 'ident' %}
       {% for p in pages %}
         {% if p.title == page.title %}
         <b class="page-link current">{{ p.title }}</b>
