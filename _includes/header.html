@@ -1,12 +1,6 @@
 <header class="site-header">
-
-<div class="wrapper">
-
-    <div class="site-title">
-     <a href="{{site.baseurl}}/">
-       <img src="{{site.baseurl}}/images/chahidchadipicture.jpg"  title="chahid chadi picture"/>
-     </a>
-    </div>
+  <div class="wrapper">
+    <!-- Removed the site-title div containing the image -->
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -18,19 +12,17 @@
       </a>
 
       <div class="trigger">
-     <span class='page-links'>
-      {% assign pages=site.pages | where:"lang", "en" | sort: 'ident' %}
-      {% for p in pages %}
-        {% if p.title == page.title %}
-        <b class="page-link current">{{ p.title }}</b>
-        {% elsif p.title %}
-        <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
-        {% endif %}
-      {% endfor %}
-      </span>
+        <span class='page-links'>
+          {% assign pages=site.pages | where:"lang", "en" | sort: 'ident' %}
+          {% for p in pages %}
+            {% if p.title == page.title %}
+            <b class="page-link current">{{ p.title }}</b>
+            {% elsif p.title %}
+            <a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
+            {% endif %}
+          {% endfor %}
+        </span>
       </div>
-
     </nav>
-</div><!-- wrapper -->
-
+  </div><!-- wrapper -->
 </header>
