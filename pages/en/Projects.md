@@ -29,4 +29,38 @@ Developed a machine learning model to detect fraudulent credit card transactions
 - Refine performance metrics for better alignment with business objectives
 - Enhance model robustness and scalability for large-scale deployment
 
+ ## Full CV
+
+<embed src="/cv/credit_card_fraud_detection_model_rapport.pdf" width="100%" height="600px" type="application/pdf">
+
+
+<script>
+    // URL of PDF document
+    var url = '/cv/credit_card_fraud_detection_model_rapport.pdf';
+
+    // Load the PDF document
+    pdfjsLib.getDocument(url).promise.then(function(pdf) {
+        // Get the first page
+        pdf.getPage(1).then(function(page) {
+            var scale = 1.5;
+            var viewport = page.getViewport({scale: scale});
+
+            // Get canvas element
+            var canvas = document.getElementById('pdf-canvas');
+            var context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            // Render PDF page into canvas context
+            var renderContext = {
+                canvasContext: context,
+                viewport: viewport
+            };
+            page.render(renderContext);
+        });
+    });
+</script>
+
+ 
+
 This project showcases the potential of machine learning in addressing the challenges of credit card fraud detection, while highlighting areas for continued research and improvement in the field.
