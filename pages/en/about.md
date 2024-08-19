@@ -4,6 +4,7 @@ layout: page
 title: Home
 permalink: /
 lang: en
+nav_order: 1
 ---
 
 # Chadi Chahid - Academic Homepage
