@@ -1,5 +1,5 @@
 ---
-ident: academic-projects
+ident: 2-academic-projects
 layout: page
 title: My Academic Projects
 description: Master's thesis on Schwarz-type Domain Decomposition Methods
