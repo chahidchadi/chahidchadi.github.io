@@ -1,219 +1,199 @@
 /**
- * Reset some basic elements
+ * Reset some basic elements for consistency
  */
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, /*ol, ul, */figure {
-    margin: 0;
-    padding: 0;
+dl, dd, figure {
+  margin: 0;
+  padding: 0;
 }
 
-
-
 /**
- * Basic styling
+ * Basic styling for body
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+
+  // Ensure smooth text rendering across browsers
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-
-
 /**
- * Set `margin-bottom` to maintain vertical rhythm
+ * Maintain vertical rhythm with margin-bottom
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+ul, ol, dl, figure {
+  margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
- * Images
+ * Images should scale properly and align vertically
  */
 img {
-    max-width: 100%;
-    vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
-
-
 /**
- * Figures
+ * Figures and captions styling
  */
 figure > img {
-    display: block;
+  display: block;
+  margin: 0 auto; // Center images in figures
 }
 
 figcaption {
-    font-size: $small-font-size;
+  font-size: $small-font-size;
+  text-align: center;
+  color: $grey-color;
+  margin-top: $spacing-unit / 4;
 }
 
-
-
 /**
- * Lists
+ * Lists should have consistent spacing
  */
 ul, ol {
-    margin-left: $spacing-unit;
+  margin-left: $spacing-unit;
 }
 
 li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+  margin-bottom: $spacing-unit / 4; // Consistent spacing between list items
+
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
 }
 
-
-
 /**
- * Headings
+ * Headings should be bold and consistent
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
+  font-weight: $base-font-weight;
+  line-height: 1.25; // Improved readability for headings
 }
 
-
-
 /**
- * Links
+ * Links should be clear and interactive
  */
 a {
-    color: $brand-color;
-    text-decoration: none;
+  color: $brand-color;
+  text-decoration: none;
+  transition: color 0.3s ease; // Smooth transition for hover state
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
 
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
 }
 
-
-
 /**
- * Blockquotes
+ * Blockquotes with subtle styling
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+  color: $grey-color-dark;
+  border-left: 4px solid $grey-color-light;
+  padding-left: $spacing-unit / 2;
+  font-size: 1.125rem; // Slightly larger font for emphasis
+  font-style: italic;
+  margin: $spacing-unit 0;
 
-    > :last-child {
-        margin-bottom: 0;
-    }
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
-
-
 /**
- * Code formatting
+ * Code formatting with better visibility
  */
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+  font-size: 0.9375rem; // Slightly larger for readability
+  border: 1px solid $grey-color-light;
+  border-radius: 4px;
+  background-color: #eef;
 }
 
 code {
-    padding: 1px 5px;
+  padding: 2px 6px;
+  background-color: lighten($grey-color-light, 10%); // Slightly lighter background
 }
 
 pre {
-    padding: 8px 12px;
-    overflow-x: auto;
+  padding: 10px 15px;
+  overflow-x: auto;
 
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
-
-
 /**
- * Wrapper
+ * Wrapper to center content
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
 
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
+  @include media-query($on-laptop) {
+    max-width: calc(#{$content-width} - #{$spacing-unit});
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
 }
 
-
-
 /**
- * Clearfix
+ * Clearfix utility for floated elements
  */
 %clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
-
-
 /**
- * Icons
+ * Icon styling for consistent size and alignment
  */
 .icon {
-
-    > svg, > img  {
-        display: inline-block;
-        height: 16px;
-        vertical-align: middle;
+  > svg, > img  {
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
     
-        path {
-            fill: $grey-color;
-        }
+    path {
+      fill: $grey-color;
     }
+  }
 }
 
 .iconwide {
+  > svg, > img  {
+    display: inline-block;
+    height: 24px;
+    vertical-align: middle;
 
-    > svg, > img  {
-        display: inline-block;
-        height: 24px;
-        vertical-align: middle;
-    
-        path {
-            fill: $grey-color;
-        }
+    path {
+      fill: $grey-color;
     }
+  }
 }
-
