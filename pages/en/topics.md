@@ -56,5 +56,34 @@ This master's thesis explores Schwarz-type domain decomposition methods for solv
 
 **Keywords:** 
 Domain decomposition, Alternating and parallel Schwarz methods, Optimized Schwarz methods, Dirichlet-Neumann methods, Multiplicative and additive Schwarz methods
+<embed src="/cv/credit_card_fraud_detection_model_rapport.pdf" width="100%" height="600px" type="application/pdf">
+
+
+<script>
+    // URL of PDF document
+    var url = '/cv/credit_card_fraud_detection_model_rapport.pdf';
+
+    // Load the PDF document
+    pdfjsLib.getDocument(url).promise.then(function(pdf) {
+        // Get the first page
+        pdf.getPage(1).then(function(page) {
+            var scale = 1.5;
+            var viewport = page.getViewport({scale: scale});
+
+            // Get canvas element
+            var canvas = document.getElementById('pdf-canvas');
+            var context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            // Render PDF page into canvas context
+            var renderContext = {
+                canvasContext: context,
+                viewport: viewport
+            };
+            page.render(renderContext);
+        });
+    });
+</script>
 
 This master's thesis provides a thorough exploration of Schwarz-type domain decomposition methods, offering valuable insights into their development, analysis, and practical applications in solving complex PDEs efficiently.
