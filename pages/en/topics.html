@@ -1,66 +1,60 @@
 ---
-ident:3-teaching
+ident: academic-projects
 layout: page
-title: My works
-description: 
+title: My Academic Projects
+description: Master's thesis on Schwarz-type Domain Decomposition Methods
 lang: en
 ---
-# Chadi Chahid - Projects
-## Credit Card Fraud Detection System
+
+# Chadi Chahid - Academic Projects
+
+## Master's Thesis: Schwarz-type Domain Decomposition Methods
+
+**Title:** Méthodes de décomposition de domaine de type Schwarz
 
 **Description:**  
-Developed a machine learning model to detect fraudulent credit card transactions using a dataset of over 5.7 million transactions. This project involved extensive data preprocessing, feature engineering, and model development to address the significant class imbalance inherent in fraud detection tasks.
+This master's thesis explores Schwarz-type domain decomposition methods for solving complex partial differential equations (PDEs). The research focuses on improving the efficiency and accuracy of numerical solutions for large-scale problems, particularly in the context of parallel computing.
+
+**Key Details:**
+- **Degree:** Master en Analyse Numérique et Équations aux Dérivées Partielles
+- **Institution:** Université Moulay Ismail
+- **Supervisor:** Prof. Khallouq Samir
+- **Year:** 2023
+
+**Objectives:**
+- Present a detailed development of Schwarz methods
+- Understand the necessities that led to their development
+- Analyze their advantages and optimal uses compared to one another
+
+**Key Topics:**
+1. Introduction to domain decomposition and associated problems
+2. Historical aspect of Schwarz methods
+3. Classical Schwarz method and its parallel version
+4. Convergence analysis using Fourier analysis
+5. Dirichlet-Neumann method for non-overlapping domains
+6. Optimized Schwarz methods for both overlapping and non-overlapping cases
+7. Discretization of Schwarz methods
+8. Numerical simulations and interpretations
+
+**Methodology:**
+- Implementation of finite difference methods for discretization
+- Adaptation of Schwarz's convergence proof for rectangular domains
+- Use of Fourier analysis to calculate convergence factors
+- Variational interpretation of the Schwarz method
+- Matrix formulation of alternating Schwarz methods
 
 **Key Contributions:**
-- **Data Preprocessing:** Cleaned and undersampled a large dataset of 5.7 million transactions to create a balanced subset for model training.
-- **Feature Engineering:** Created novel features based on transaction patterns, customer behavior, and risk scores to enhance model performance.
-- **Model Development:** Designed and trained an XGBoost classifier optimized for imbalanced datasets using SMOTE technique.
-- **Model Evaluation:** Achieved high precision (1.00) for non-fraudulent transactions and good precision (0.94) and recall (0.75) for fraudulent transactions.
-- **Financial Analysis:** Demonstrated potential savings of approximately $1.8 million by correctly identifying fraudulent transactions.
+- Comprehensive analysis of various Schwarz-type domain decomposition methods
+- Detailed convergence proofs and factor calculations
+- Comparison and optimization of different methods
+- Generalization of discretization for all studied methods
 
 **Technologies Used:**
-- **Machine Learning:** XGBoost, Scikit-learn, SMOTE
-- **Data Analysis:** Pandas, NumPy
-- **Data Visualization:** Matplotlib, Seaborn
-- **Programming Language:** Python
+- Numerical analysis software (e.g., MATLAB, Python with NumPy/SciPy)
+- High-performance computing resources for parallel computations
+- Visualization tools for result analysis and presentation
 
-**Future Improvements:**
-- Implement more realistic scenarios for model testing
-- Refine performance metrics for better alignment with business objectives
-- Enhance model robustness and scalability for large-scale deployment
+**Keywords:** 
+Domain decomposition, Alternating and parallel Schwarz methods, Optimized Schwarz methods, Dirichlet-Neumann methods, Multiplicative and additive Schwarz methods
 
- # Full Rapport
-
-<embed src="/cv/credit_card_fraud_detection_model_rapport.pdf" width="100%" height="600px" type="application/pdf">
-
-
-<script>
-    // URL of PDF document
-    var url = '/cv/credit_card_fraud_detection_model_rapport.pdf';
-
-    // Load the PDF document
-    pdfjsLib.getDocument(url).promise.then(function(pdf) {
-        // Get the first page
-        pdf.getPage(1).then(function(page) {
-            var scale = 1.5;
-            var viewport = page.getViewport({scale: scale});
-
-            // Get canvas element
-            var canvas = document.getElementById('pdf-canvas');
-            var context = canvas.getContext('2d');
-            canvas.height = viewport.height;
-            canvas.width = viewport.width;
-
-            // Render PDF page into canvas context
-            var renderContext = {
-                canvasContext: context,
-                viewport: viewport
-            };
-            page.render(renderContext);
-        });
-    });
-</script>
-
- 
-
-This project showcases the potential of machine learning in addressing the challenges of credit card fraud detection, while highlighting areas for continued research and improvement in the field.
+This master's thesis provides a thorough exploration of Schwarz-type domain decomposition methods, offering valuable insights into their development, analysis, and practical applications in solving complex PDEs efficiently.
