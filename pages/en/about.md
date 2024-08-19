@@ -8,10 +8,9 @@ lang: en
 
 # Chadi Chahid - Academic Homepage
 
-![Chadi Chahid](/images/chahidchadipicture.jpg)
-
-
 ## About Me
+<img src="/images/chahidchadipicture.jpg" alt="Chadi Chahid" width="200" style="border-radius: 50%;">
+
 
 I am a PhD student in Applied Mathematics at [Moulay Ismail University](http://www.umi.ac.ma/), specializing in numerical analysis and partial differential equations (PDEs). My research focuses on innovative approaches to solving complex mathematical problems, particularly through the application of machine learning techniques to traditional mathematical challenges.
 
