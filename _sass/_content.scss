@@ -1,90 +1,92 @@
 .page-content {
-    font-size: large
+  font-size: 1.25rem; // Using rem units for better scalability
 }
 
 body#bio strong {
-  font-size: larger
+  font-size: 1.5rem; // Consistent with rem units for scalability
 }
 
-ul.topics, ul.publications {
-   list-style-type: none;
-   /*width: 500px;*/
+ul.topics,
+ul.publications {
+  list-style-type: none;
+  padding: 0; // Ensure no extra space around the list
 
-    h3 {
-      font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
-    }
+  > li {
+    padding: 10px;
+    overflow: auto;
+    display: flex; // Flexbox for better alignment
+    align-items: center; // Center align items vertically
 
-    > li img {
-      float: left;
-      margin: 0 15px 0 0;
-      width: 100px;
-      display: block;
-    }
-
-    > li {
-      padding: 10px;
-      overflow: auto;
-    }
-
-    > li:hover {
+    &:hover {
       background: #eee;
       cursor: pointer;
     }
-}
 
-/* English title for a Hebrew paper: */
-.entitle {
-    text-align: left;
-    font-weight: normal;
-    font-style: italic;
-}
-
-.onlinedemo {
-    font-weight: bold;
-    font-style: italic;
-    display: inline;
-    margin: 0 3em;
-    padding: 3px; 
-    border: green 1px solid; 
-    border-radius: 10px;
-    background: #efe;
-}
-
-.presentation {
-    font-weight: bold;
-    font-style: italic;
-    display: inline;
-    margin: 0 3em;
-    padding: 3px; 
-    border: red 1px solid; 
-    border-radius: 10px;
-    background: #fef;
-}
-
-
-
-ul.topics {    
-    > li > a {
-        color: #222;
-        text-decoration: none;
-
-        &:visited {
-            color: #666;
-        }
-
-        &:hover {
-            color: #222;
-            text-decoration: none;
-        }
+    > img {
+      margin-right: 15px; // Consistent margin
+      width: 100px;
+      border-radius: 5px; // Slightly rounded corners for images
     }
+
+    h3 {
+      font-weight: bold;
+      font-size: 1.25rem; // Consistent font size with the content
+      line-height: 1.5; // Line height for readability
+      margin: 0; // Remove default margin
+    }
+  }
+}
+
+.entitle {
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 1rem; // Add spacing for better separation
+}
+
+.onlinedemo,
+.presentation {
+  font-weight: bold;
+  font-style: italic;
+  display: inline-block; // Ensure proper inline spacing
+  margin: 0 2em; // Reduced margin for compact layout
+  padding: 5px 10px; // More padding for better appearance
+  border: 1px solid; 
+  border-radius: 8px; // Slightly rounded corners for consistency
+  background: #efe;
+  border-color: green;
+
+  &.presentation {
+    background: #fef;
+    border-color: red;
+  }
+}
+
+ul.topics {
+  > li > a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500; // Slightly bolder for emphasis
+
+    &:visited {
+      color: #666;
+    }
+
+    &:hover {
+      color: #2a7ae2; // Brand color for hover effect
+      text-decoration: underline;
+    }
+  }
 }
 
 img.topic:lang(en) {
-    float:right;
-    width:160px;
+  float: right;
+  width: 160px;
+  margin-left: 15px; // Add margin to separate from text
 }
 
 img.topic:lang(he) {
-    float:left;
-    width:160px;
+  float: left;
+  width: 160px;
+  margin-right: 15px; // Add margin to separate from text
 }
