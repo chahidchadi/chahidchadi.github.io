@@ -5,7 +5,6 @@
     <div class="site-title" style="font-size: 24px; color: #fff; font-weight: 600; text-align: center;">
       Chadi Chahid - Academic Homepage
     </div>
-
     <!-- Navigation -->
     <nav class="site-nav" style="margin-left: auto;">
       <a href="#" class="menu-icon" style="display: none;"> <!-- Hide on larger screens -->
@@ -15,7 +14,6 @@
           <path fill="#fff" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
         </svg>
       </a>
-
       <div class="trigger" style="display: flex; gap: 20px;">
         <span class='page-links'>
           {% assign pages=site.pages | where:"lang", "en" | sort: 'ident' %}
@@ -23,7 +21,7 @@
             {% if p.title == page.title %}
             <b class="page-link current" style="color: #fff; font-weight: 600;">{{ p.title }}</b>
             {% elsif p.title %}
-            <a class="page-link" href="{{ p.url | prepend: site.baseurl }}" style="color: #fff; text-decoration: none; font-weight: 400;">{{ p.title }}</a>
+            <a class="page-link" href="{{ p.url | prepend: site.baseurl }}" style="color: #fff; text-decoration: none; font-weight: 400; transition: color 0.3s ease;">{{ p.title }}</a>
             {% endif %}
           {% endfor %}
         </span>
@@ -31,3 +29,9 @@
     </nav>
   </div><!-- wrapper -->
 </header>
+
+<style>
+  .page-link:hover {
+    color: #ccc !important;
+  }
+</style>
