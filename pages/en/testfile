@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px 0;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .profile-img {
+            width: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Academic Title or Brief Description</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="academic.html">My Academic</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact Me</a>
+    </nav>
+    <main>
+        <img src="/api/placeholder/200/200" alt="Your Name" class="profile-img">
+        <h2>Welcome to My Academic Website</h2>
+        <p>Hello! I'm [Your Name], a [Your Position] at [Your Institution]. My research focuses on [Your Research Areas]. This website provides an overview of my academic work, projects, and achievements.</p>
+        <h2>Latest News</h2>
+        <ul>
+            <li>[Date] - [News item 1]</li>
+            <li>[Date] - [News item 2]</li>
+            <li>[Date] - [News item 3]</li>
+        </ul>
+        <h2>Featured Publication</h2>
+        <p>[Authors]. (Year). "[Title of your featured publication]". <em>[Journal Name]</em>, Volume(Issue), pages. DOI: [DOI number]</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
